@@ -1,0 +1,26 @@
+/* Fonts */
+
+/* Для заголовков */
+/* Обычный */
+
+@font-face {
+    font-family: 'DinWebNarrowDemi';
+    src: local('DinWebNarrowDemi'),
+         url('../fonts/DinWebNarrowDemi.ttf');
+  }
+
+/* Жирный */
+
+@font-face {
+    font-family: 'DINPro-CondBold';
+    src: local('DINPro-CondBold'),
+         url('../fonts/DINPro-CondBold.otf');
+  }
+
+/* Для контента */
+
+@font-face {
+  font-family: 'Graphik LCG';
+  src: local('Graphik LCG'),
+       url('../fontsGraphikLCG-Regular.ttf');
+}

@@ -1,0 +1,149 @@
+/* Laptops & Mobile */
+
+@media (max-width: 1240px) {
+    .container {
+        width: 940px;
+    }
+}
+
+@media (max-width: 999px) {
+    .container {
+        width: 760px;
+    }
+
+    .banner{
+
+        &__inner{
+            background-position-x: 0;
+        }
+
+        &__picture{
+
+            & img{
+                right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .container {
+        width: 100%;
+    }
+
+    .banner{
+
+        &__parallax{
+            background: url(../assets/images/mobile-lightnings.svg) center center no-repeat;
+        }
+
+        &__inner{
+            background-image: url(../assets/images/mobile-background-lightning.png);
+            background-image: -webkit-image-set(url(../assets/images/mobile-background-lightning.png) 1x, url(../assets/images/mobile-background-lightning@x2.png) 2x); 
+            background-position-x: center;
+            background-position-y: 120%;
+        }
+        
+        &__wrapper{
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 28px;
+            max-height: 260px;
+            box-sizing: border-box;
+        }
+        
+        &__title{
+            max-width: 191px;
+
+            & h1{
+                font-size: $m-title;
+                line-height: 32px;
+                text-align: center;
+            }
+        }
+
+        &__picture{
+            
+            & img{
+                max-width: 232px;
+                top: 8px;
+            }
+        }
+    }
+
+    .description{
+
+        &__wrapper{
+            padding: 100px 0 50px;
+
+            & p{
+                font-size: $second-size;
+                line-height: 24px;
+                text-align: left;
+                padding: 0 15px;
+            }
+        }
+    }
+
+    .advantages{
+
+        &__wrapper{
+            padding: 60px 0;
+        }
+
+        &__title{
+            margin-bottom: 15px;
+
+            h2{
+                font-size: $m-title;
+                text-align: center;
+            }
+        }
+
+        &__items{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item{
+            margin-bottom: 25px;
+            max-width: 230px;
+        }
+       
+    }
+
+    .order{
+
+        &__wrapper{
+            padding: 60px 0; 
+        }
+
+        &__title{
+            margin-bottom: 25px;
+            max-width: 200px;
+
+            h2{
+                font-size: $m-title;
+                line-height: 34px;
+                text-align: center;
+            }
+        }
+
+        &__items{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item{
+            margin-bottom: 25px;
+        }
+
+        &__footnote{
+
+            p{
+                text-align: left;
+                padding: 0 15px;
+            }
+        }
+    }
+}    
